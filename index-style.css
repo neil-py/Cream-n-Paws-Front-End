@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+    --typeface: "Ubuntu", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: #ffffff;
+    font-family: var(--typeface);
+}
+
+/* Hero part*/
+
+.section-hero {
+    background-color: #fdf2e9;
+    padding: 8.4rem 5rem 9.6rem 5rem;
+}
+
+.hero {
+    /* We'll not use px to define the length and will use rem. */
+    /* max-width: 1300px; */
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas:
+        "hero-text-box hero-img-box";
+
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    align-items: center;
+    gap: 0 9.6rem;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.05;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.hero-description {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    
+}
+
+.hero-img-box {
+    grid-column: 2/3;
+    grid-row: 1 / 3;
+    grid-area: hero-img-box;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 2%;
+    max-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    /* margin-top: 4.8rem; */
+    padding: 1.6rem 3.2rem;
+    text-decoration: none;
+
+    transition: background-color 500ms;
+}
+
+.btn--fill:link,
+.btn--fill:visited {
+    background-color: #e67e22;
+    color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+    color: #555;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.btn--fill:hover,
+.btn--fill:active {
+    background-color: #cf711f;
+    text-decoration: none;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+    background-color: #fdf2e9;
+    /* Now we'll not use border as in border the outlines are on the outside. Instead we'll use the outline or box-shadow property */
+    box-shadow: inset 0px 0px 0px 3px #fff;
+    text-decoration: none;
+    /* outline: #fff solid 3px; */
+}
+
+/* We'll create a utility class that can be used for any element by simply adding a class. */
+.margin-right-btn {
+    margin-right: 2.4rem;
+}
+
+.delivered-meals {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.delivered-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.delivered-text span {
+    color: #cf711f;
+}
+
+/* Featured Products*/
+.featured-products {
+    padding: 2%;
+    text-align: center;
+}
+
+.featured-products h1 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.05;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.product-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 2%;
+}
+
+.product-card p {
+    padding: 1%;
+}
+
+.product-card span {
+    color: #cf711f;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+    
+}
+
+.product-card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #cf711f;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 2%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.product-card button:hover {
+    opacity: 0.7;
+}
+
+/* ........./ Testimonial /.......... */
+#testimonials {
+    padding: 5rem 0;
+    background: #f5e8d9;
+}
+
+.testimonial-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.testimonial-box .checked {
+    color: #ff9529;
+}
+
+.testimonial-box .testimonial-text {
+    margin: 1rem 0;
+    color: #444;
+}
+
+.testimonial-box {
+    text-align: center;
+    padding: 1rem;
+}
+
+.customer-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/*...........FAQ.............*/
+.faq-header {
+    font-size: 42px;
+    padding: 3%;
+    text-align: center;
+    color: #333;
+}
+
+.faq-header span {
+    color: #cf711f;
+}
+
+.faq-content {
+    margin: 0 5% 2% 5%;
+    padding: 2%
+}
+
+.faq-question {
+    padding: 20px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.panel-title {
+    font-size: 24px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10px 10px 0 48px;
+    display: block;
+    cursor: pointer;
+}
+
+.panel-content {
+    font-size: 20px;
+    padding: auto;
+    margin: 0 5% 0 5%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transition: .4s;
+    color: rgb(92, 92, 92);
+}
+
+.panel:checked~.panel-content {
+    height: auto;
+    opacity: 1;
+    padding: 2%;
+    margin: 0 5% 0 5%;
+}
+
+.plus {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 4px;
+    z-index: 5;
+    font-size: 42px;
+    line-height: 100%;
+    user-select: none;
+    transition: .2s ease;
+}
+
+.plus span {
+    color: #cf711f;
+}
+
+.panel:checked~.plus {
+    transform: rotate(45deg);
+}
+
+.panel {
+    display: none;
+}
+
+@media (max-width: 1335px){
+    .hero {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: .8fr .6fr;
+        grid-template-areas:
+            "hero-img-box"
+            "hero-text-box"
+        ;
+    }
+
+    .section-hero{
+        padding: 2%;
+    }
+    .hero-img-box{
+        display: grid;
+        justify-content: center;
+    }
+
+    .heading-primary{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-description{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    .buttons{
+        display: grid;
+        justify-content: center;
+    }
+    .btn:link,
+    .btn:visited {
+        display: inline-block;
+        margin-bottom: 3%;
+    }
+    .delivered-meals{
+        margin-top: 2%;
+        display: grid;
+        justify-content: center;
+    }
+
+    .testimonial-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .buttons{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn:link,
+    .btn:visited {
+        display: flex;
+        margin-bottom: 5%;
+        flex-direction: column;
+        margin-right: 5%;
+    }
+
+    .hero-img-box{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        width: 100%;
+        border-radius: 2%;
+        margin-top: 10%;
+    }
+
+    .hero {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: .3fr .6fr;
+        grid-template-areas:
+            "hero-img-box"
+            "hero-text-box"
+        ;
+    }
+}

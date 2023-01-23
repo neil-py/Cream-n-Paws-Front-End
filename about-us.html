@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cream N' Paws</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="about-style.css">
+  <link rel="stylesheet" href="nav-style.css">
+  <link rel="stylesheet" href="footer-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" width="60px"></a>
+    </div>
+    <div class="navbox">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+          <div class="dropdown-content">
+            <a href="index.html#featured-products">Featured Products</a>
+            <a href="index.html#testimonials">What Our Customers Say</a>
+            <a href="index.html#FAQ">FAQ</a>
+          </div>
+        </li>
+        <li>
+          <a href="about-us.html" class="active">About Us</a>
+          <div class="dropdown-content">
+            <a href="about-us.html#about-us">Something About Us</a>
+            <a href="about-us.html#we-do">What We Do</a>
+            <a href="about-us.html#timeline">Roadmap</a>
+          </div>
+        </li>
+        <li>
+          <a href="Gallery.html">Gallery</a>
+        </li>
+        <li>
+          <a href="products.html">Products</a>
+          <div class="dropdown-content">
+            <a href="products.html#cookies">Cookies</a>
+            <a href="products.html#beverages">Beverages</a>
+            <a href="products.html#specials">Specials</a>
+          </div>
+        <li>
+          <a href="reviews.html">Reviews</a>
+        </li>
+        <li>
+          <a href="order.html">Order</a>
+        </li>
+        <li>
+          <a href="visit.html">Visit Us</a>
+          <div class="dropdown-content">
+            <a href="visit.html#register-form">Registration</a>
+            <a href="visit.html#maps">Location</a>
+          </div>
+        </li>
+        <li>
+          <a href="contact-us.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <script>
+    navbox = document.querySelector(".navbox");
+    navbox.onclick = function () {
+      navb = document.querySelector(".nav-bar");
+      navb.classList.toggle("active");
+    }
+  </script>
+
+  <section>
+    <div class="section-hero">
+      <div class="hero">
+        <div class="hero-title">
+          <h1> About <span>Us</span></h1>
+          <p>Learn more about our history</p>
+        </div>
+      </div>
+  </section>
+
+  <section class="about-us" id="about-us">
+    <div class="about-us-text">
+      <h2>A LITTLE SOMETHING ABOUT US</h2>
+      <br>
+      <p>Welcome to Cream N' Paws, a gourmet cookie store that is dedicated to providing the best quality, homemade
+        cookies that are sure to satisfy your sweet cravings. Our team of passionate bakers uses only the finest
+        ingredients to create unique and delicious flavors that will leave your taste buds wanting more. We offer a wide
+        range of flavors and options including gluten-free, vegan, and custom-made cookies. Our main location is in
+        Makati, Philippines, and our store is currently only available for online ordering until our rebranding is
+        finished.
+        <br>
+        <br>
+        We understand the importance of providing our customers with the best possible experience, which is why we are
+        dedicated to providing high-quality products and superior customer service. Our team is constantly working to
+        improve and innovate our products to ensure that our customers are satisfied. We are committed to connecting
+        with our customers and fulfilling their needs, guaranteeing the best possible experience.
+        <br>
+        <br>
+        We are also proud to say that a portion of our income goes towards feeding our beloved cats, which makes our
+        business even more meaningful for us. We believe in being socially responsible and making a difference in the
+        lives of both our customers and our cats.
+        <br>
+        <br>
+        Thank you for choosing Cream N' Paws, and we look forward to serving you with our delicious homemade cookies. We
+        are confident that you will love them and become a regular customer. Please don't hesitate to contact us if you
+        have any questions or special requests, we are always happy to help.
+      </p>
+    </div>
+    </div>
+  </section>
+
+  <hr />
+  <section class="we-do-container" id="we-do">
+    <h2>WHAT WE DO</h2>
+    <div class="info-container">
+      <div class="info-card">
+        <img src="Baking_cat.gif" alt="cat1" style="width:100%">
+        <h2>Quality products</h2>
+        <p>We make everything from scratch! From making the cookie dough to baking it, everything we sell 
+          we ensure you are all made by us. We also don't just use any ingredients, as we make sure to only
+          use the best of the best for our lovely customers.
+        </p>
+      </div>
+      <div class="info-card">
+        <img src="Order_cat.gif" alt="cat2" style="width:100%">
+        <h2>Quality Service</h2>
+        <p>We may be new and small but that doesn't stop us from giving our 100%! Every order from us 
+          we dedicate all our heart to it. To ensure that you, our very lovely customer, is comfortable
+          on ordering your favorite cookies. 
+        </p>
+      </div>
+      <div class="info-card">
+        <img src="Floating_cat.gif" alt="cat3" style="width:100%">
+        <h2>Affordable prices</h2>
+        <p> We price our products at a very reasonable amount. We are a newly established store but 
+          we're also individuals who enjoy some quality but affordable delicious products, which is why
+          our prices are is at their most reasonable amount.
+        </p>
+        </div>
+  </section>
+
+  <hr />
+  <section id="timeline">
+    <h2>OUR ROADMAP</h2>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>Early 2022</h2>
+          <p>Planning and conceptualizing of the business, researching on the best ingredients and recipes for the gourmet cookies.</p>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <h2>July 2022</h2>
+          <p>Business operations began, launching the online store and starting to bake and sell homemade cookies.</p>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <h2>Start of 2023</h2>
+          <p>Re-branding began, updating the logo, packaging, 
+            website and social media to better reflect the store's mission and values. Slow progress due to other business priorities.</p>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <h2><span>Mid 2023</span></h2>
+          <p>Planned date for introducing the re-branding result, launching the new look and feel of Cream N' Paws, 
+            and possibly opening a physical store in Makati, Philippines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="last-remark">
+    <h2>We hope you'll follow us throughout this journey and continue to enjoy our delicious <span>homemade cookies</span>.</h2>
+  </section>
+
+
+  <section id="footer">
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4><a href="index.html">HOME</h4>
+            <ul>
+              <li><a href="index.html#Cream N' Paws">Cream N' Paws</a></li>
+              <li><a href="index.html#featured-products">Featured Products</a></li>
+              <li><a href="index.html#testimonials">What Our Customers Say</a></li>
+              <li><a href="index.html#FAQ">Frequently Asked Questions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="about-us.html">ABOUT US</h4>
+            <ul>
+              <li><a href="about-us.html#about-us">Something About Us</a></li>
+              <li><a href="about-us.html#we-do">What We Do</a></li>
+              <li><a href="about-us.html#timeline">Roadmap</a></li>
+  
+            </ul>
+            <br>
+            <br>
+            <br>
+  
+          </div>
+          <div class="footer-col">
+            <h4><a href="Gallery.html">GALLERY</h4>
+            <ul>
+              <li><a href="Gallery.html#Cream N' Paws Gallery">Cream N' Paws Gallery</a></li>
+  
+  
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="products.html">PRODUCTS</h4>
+            <ul>
+              <li><a href="products.html#cookies">Cookies</a></li>
+              <li><a href="products.html#beverages">Beverages</a></li>
+              <li><a href="products.html#specials">Specials</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="reviews.html">REVIEW</h4>
+            <ul>
+              <li><a href="reviews.html#Cream N' Paws Reviews">Reviews</a></li>
+  
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="order.html">ORDER</h4>
+            <ul>
+              <li><a href="order.html#order-form">Order Form</a></li>
+  
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="visit.html">VISIT US</h4>
+            <ul>
+              <li><a href="visit.html#register-form">Registration</a></li>
+              <li><a href="visit.html#maps">Location</a></li>
+  
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="contact-us.html">CONTACT US</h4>
+            <ul>
+              <li><a href="contact-us.html">Contact Us</a></li>
+  
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4>SOCIALS</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/cream.n.paws.ph/">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>DEVELOPERS NAME:</h4>
+            <ul>
+              <li>Ian Chester Tabumpama</li>
+              <li>Neil Patrick Villanueva</li>
+              <li>Ronnel David Esguera</a></li>
+              <li>Kyle Marasigan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr />
+      <p> Cream N' Paws &copy; 2023</p>
+    </footer>
+  </section>
+
+
+
+</body>
+
+</html>

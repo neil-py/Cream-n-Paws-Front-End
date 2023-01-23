@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+    --typeface: "Ubuntu", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: #ffffff;
+    font-family: var(--typeface);
+}
+
+/* Hero */
+.section-hero {
+    background-color: #fdf2e9;
+    padding: 8.4rem 5rem 9.6rem 5rem;
+    background-image: url("reviews-hero.png");
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    /* We'll not use px to define the length and will use rem. */
+    /* max-width: 1300px; */
+    max-width: 130rem;
+    display: grid;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    align-items: center;
+    gap: 0 9.6rem;
+}
+
+.hero-title {
+    font-size: 5.2rem;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.05;
+    text-align: center;
+}
+.hero-title span{
+    color: #cf711f;
+}
+
+.hero-title p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.about-us-text {
+    color: #999999;
+    padding: 5%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 700px;
+    display: flex;
+    text-align: center;
+    line-height: 31px;
+    position: absolute;
+}
+
+#testimonials {
+    padding: 3rem 0;
+
+}
+
+.testimonial-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.testimonial-container {
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 1rem;
+    
+}
+
+.testimonial-box .checked {
+    color: #ff9529;
+    
+}
+
+.testimonial-box .testimonial-text {
+    margin: 1rem 0;
+    color: #444;
+}
+
+.testimonial-box {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8c99bec;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+.customer-photo img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    border-radius:50%;
+    margin: auto;
+}
+
+@media (max-width: 1335px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}

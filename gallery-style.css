@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+    --typeface: "Ubuntu", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: #ffffff;
+    font-family: var(--typeface);
+}
+
+/* gallery part*/
+
+.gallery {
+    padding: 2%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.gallery {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.gallery img {
+    width: 500px;
+    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    transition: 0.5s;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.gallery img:hover {
+    filter: grayscale(80%);
+    transform: scale(1.02);
+}
+
+/* Hero part*/
+
+/* Hero */
+.section-hero {
+    background-color: #fdf2e9;
+    padding: 8.4rem 5rem 9.6rem 5rem;
+    background-image: url("gallery-hero.jpg");
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    /* We'll not use px to define the length and will use rem. */
+    /* max-width: 1300px; */
+    max-width: 130rem;
+    display: grid;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    align-items: center;
+    gap: 0 9.6rem;
+}
+
+
+
+.hero-title {
+    font-size: 5.2rem;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.05;
+    text-align: center;
+}
+
+.hero-title span {
+    color: #cf711f;
+}
+
+.hero-title p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+/* We'll create a utility class that can be used for any element by simply adding a class. */
+.margin-right-btn {
+    margin-right: 2.4rem;
+}
+
+.delivered-meals {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.delivered-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.delivered-text span {
+    color: #cf711f;
+}
+
+
+
+@media (max-width: 1335px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+
+    .gallery {
+        width: auto;
+    }
+
+    .gallery img {
+        width: 500px;
+        height: 200px;
+        max-width: 500px;
+        max-height: 500px;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .gallery img {
+        width: 350px;
+        height: 200px;
+        max-width: 500px;
+        max-height: 500px;
+
+    }
+}

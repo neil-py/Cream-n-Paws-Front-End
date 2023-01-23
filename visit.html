@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cream N' Paws</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="visit-style.css">
+  <link rel="stylesheet" href="nav-style.css">
+  <link rel="stylesheet" href="footer-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" width="60px"></a>
+    </div>
+    <div class="navbox">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+          <div class="dropdown-content">
+            <a href="index.html#featured-products">Featured Products</a>
+            <a href="index.html#testimonials">What Our Customers Say</a>
+            <a href="index.html#FAQ">FAQ</a>
+          </div>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+          <div class="dropdown-content">
+            <a href="about-us.html#about-us">Something About Us</a>
+            <a href="about-us.html#we-do">What We Do</a>
+            <a href="about-us.html#timeline">Roadmap</a>
+          </div>
+        </li>
+        <li>
+          <a href="Gallery.html">Gallery</a>
+        </li>
+        <li>
+          <a href="products.html">Products</a>
+          <div class="dropdown-content">
+            <a href="products.html#cookies">Cookies</a>
+            <a href="products.html#beverages">Beverages</a>
+            <a href="products.html#specials">Specials</a>
+          </div>
+        <li>
+          <a href="reviews.html">Reviews</a>
+        </li>
+        <li>
+          <a href="order.html">Order</a>
+        </li>
+        <li>
+          <a href="visit.html" class="active">Visit Us</a>
+          <div class="dropdown-content">
+            <a href="visit.html#register-form">Registration</a>
+            <a href="visit.html#maps">Location</a>
+          </div>
+        </li>
+        <li>
+          <a href="contact-us.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <script>
+    navbox = document.querySelector(".navbox");
+    navbox.onclick = function () {
+      navb = document.querySelector(".nav-bar");
+      navb.classList.toggle("active");
+    }
+  </script>
+  <section>
+    <div class="section-hero">
+      <div class="hero">
+        <div class="hero-title">
+          <h1> Coming <span>Soon</span></h1>
+        </div>
+      </div>
+  </section>
+  <div class="body-text">
+    <p>Cream n' Paws cookie store is <span>coming soon</span>, offering delicious homemade cookies made with love
+      and the finest ingredients.
+      From classic chocolate chip to unique pup-inspired flavors, we've got something for every taste.
+      Follow us for updates on our grand opening and special deals. For the meantime, if you want to visit us
+      during our opening,
+      register below!</p>
+  </div>
+
+  <div class="testbox" id="register-form">
+    <form action="https://formspree.io/f/xyyazben" method="POST">
+      <b>If you are interested in visiting our store during our opening day, please register here.</b>
+      <div class="item">
+        <label for="name">Name<span>*</span></label>
+        <input id="name" type="text" name="name" required />
+      </div>
+      <div class="item">
+        <label for="email">Email Address<span>*</span></label>
+        <input id="email" type="email" name="email" required />
+      </div>
+      <div class="item">
+        <label for="address">Address<span>*</span></label>
+        <input id="address" type="address" name="address" required />
+      </div>
+      <div class="item">
+        <label for="city">City<span>*</span></label>
+        <input id="city" type="text" name="city" required />
+      </div>
+      <div class="item">
+        <label for="Region">Region<span>*</span></label>
+        <input id="Region" type="text" name="Region" required />
+      </div>
+      <div class="item">
+        <label for="zip">Zip<span>*</span></label>
+        <input id="zip" type="text" name="zip" required />
+      </div>
+      <div class="item">
+        <label for="phone">Phone<span>*</span></label>
+        <input id="phone" type="number" name="phone" required />
+      </div>
+      <div class="item">
+        <label for="Birthday">Date of Birth<span>*</span></label>
+        <input id="Birthday" type="date" name="Birthday" required />
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+      <div class="question">
+        <label>Gender</label>
+        <div class="question-answer">
+          <div>
+            <input type="radio" value="Male" id="radio_1" name="Gender" />
+            <label for="radio_1" class="radio"><span>Male</span></label>
+          </div>
+          <div>
+            <input type="radio" value="Female" id="radio_2" name="Gender" />
+            <label for="radio_2" class="radio"><span>Female</span></label>
+          </div>
+
+          <div>
+            <input type="radio" value="others" id="radio_3" name="Gender" />
+            <label for="radio_3" class="radio"><span>Others</span></label>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-block">
+        <button type="submit" value="submit">SUBMIT</button>
+      </div>
+  </div>
+  </form>
+  </div>
+
+  <div class="body-text">
+    <h2>Proposed Location</h2>
+    <br>
+    <hr />
+  </div>
+
+
+  <div class="mapouter" id="maps">
+    <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0"
+        marginwidth="0"
+        src="https://maps.google.com/maps?width=1420&amp;height=478&amp;hl=en&amp;q=dela rosa st makati&amp;t=p&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+        href="https://pdflist.com/" alt="pdflist.com">Pdflist.com</a></div>
+    <style>
+      .mapouter {
+        position: auto;
+        text-align: right;
+        width: 100%;
+        height: 478px;
+        margin-bottom: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        width: 80%;
+        height: 478px;
+      }
+
+      .gmap_iframe {
+        height: 100% !important;
+        max-height: 478px;
+      }
+    </style>
+  </div>
+
+  <section id="footer">
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4><a href="index.html">HOME</h4>
+            <ul>
+              <li><a href="index.html#Cream N' Paws">Cream N' Paws</a></li>
+              <li><a href="index.html#featured-products">Featured Products</a></li>
+              <li><a href="index.html#testimonials">What Our Customers Say</a></li>
+              <li><a href="index.html#FAQ">Frequently Asked Questions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="about-us.html">ABOUT US</h4>
+            <ul>
+              <li><a href="about-us.html#about-us">Something About Us</a></li>
+              <li><a href="about-us.html#we-do">What We Do</a></li>
+              <li><a href="about-us.html#timeline">Roadmap</a></li>
+  
+            </ul>
+            <br>
+            <br>
+            <br>
+  
+          </div>
+          <div class="footer-col">
+            <h4><a href="Gallery.html">GALLERY</h4>
+            <ul>
+              <li><a href="Gallery.html#Cream N' Paws Gallery">Cream N' Paws Gallery</a></li>
+  
+  
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="products.html">PRODUCTS</h4>
+            <ul>
+              <li><a href="products.html#cookies">Cookies</a></li>
+              <li><a href="products.html#beverages">Beverages</a></li>
+              <li><a href="products.html#specials">Specials</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="reviews.html">REVIEW</h4>
+            <ul>
+              <li><a href="reviews.html#Cream N' Paws Reviews">Reviews</a></li>
+  
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="order.html">ORDER</h4>
+            <ul>
+              <li><a href="order.html#order-form">Order Form</a></li>
+  
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="visit.html">VISIT US</h4>
+            <ul>
+              <li><a href="visit.html#register-form">Registration</a></li>
+              <li><a href="visit.html#maps">Location</a></li>
+  
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><a href="contact-us.html">CONTACT US</h4>
+            <ul>
+              <li><a href="contact-us.html">Contact Us</a></li>
+  
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4>SOCIALS</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/cream.n.paws.ph/">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>DEVELOPERS NAME:</h4>
+            <ul>
+              <li>Ian Chester Tabumpama</li>
+              <li>Neil Patrick Villanueva</li>
+              <li>Ronnel David Esguera</a></li>
+              <li>Kyle Marasigan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr />
+      <p> Cream N' Paws &copy; 2023</p>
+    </footer>
+  </section>
+
+</body>
+
+</html>
